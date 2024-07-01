@@ -36,6 +36,55 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pasajes.html" accesskey="5">Comprar pasajes</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="souvenirs.html" accesskey="6">Souvenirs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="cart-icon" accesskey="7">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i> Carrito (<span id="cart-count">0</span>)
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                    
+                </li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+            </div>
+            <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Subtotal</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <!-- Los elementos del carrito se agregarán aquí dinámicamente -->
+                            </tbody>
+                        </table>
+                        <div class="text-end">
+                            <strong>Total: $<span id="cart-total">0.00</span></strong>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Proceder al Pago</button>
+                    </div>
+                </div>
+            </div>
+        </div>
                     </ul>
                 </div>
             </div>
@@ -67,5 +116,6 @@
     
     <br>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
